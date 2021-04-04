@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "575958955155",
+    "firebase_url": "https://drugsreact-default-rtdb.firebaseio.com",
+    "project_id": "drugsreact",
+    "storage_bucket": "drugsreact.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575958955155:android:47785375dcb0f547a4c966",
+        "android_client_info": {
+          "package_name": "com.team35.drugspot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575958955155-2hh89m6qr4jbcv3me53o1dtemeuk9lnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCaf4_q-veJuUhpoR4zbvS4gzJI_Vz2e8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575958955155-2hh89m6qr4jbcv3me53o1dtemeuk9lnt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
