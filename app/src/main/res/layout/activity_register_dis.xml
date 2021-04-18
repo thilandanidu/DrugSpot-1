@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterRepActivity">
+    tools:context=".RegisterDisActivity">
 
     <TextView
         android:id="@+id/banner"
@@ -24,7 +24,7 @@
         android:id="@+id/bannerDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="For Representatives"
+        android:text="For Distributors"
         android:textStyle="italic"
         android:textSize="18sp"
         android:textAlignment="center"
@@ -103,7 +103,7 @@
         android:layout_height="70dp"
         android:layout_marginTop="24dp"
         android:backgroundTint="#0ED689"
-        android:text="Register as Rep"
+        android:text="Register Distributor"
         android:textColor="#ffffff"
         android:textSize="26sp"
         android:textStyle="bold"

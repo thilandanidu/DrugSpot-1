@@ -1,6 +1,5 @@
 package com.team35.drugspot;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,17 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
-import java.util.Date;
-
-public class RegisterRepActivity extends AppCompatActivity {
+public class RegisterDisActivity extends AppCompatActivity {
 
     EditText fullName, nic, mobNum, email, password;
 
@@ -28,7 +23,7 @@ public class RegisterRepActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register_rep);
+        setContentView(R.layout.activity_register_dis);
 
         fullName = findViewById(R.id.fullName);
         nic = findViewById(R.id.nic);
@@ -37,12 +32,12 @@ public class RegisterRepActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
 
         registerUser = findViewById(R.id.registerUser);
-        reference = FirebaseDatabase.getInstance().getReference().child("representatives");
+        reference = FirebaseDatabase.getInstance().getReference().child("distributors");
 
         registerUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                insertRepData();
+                insertDisData();
                 fullName.getText().clear();
                 nic.getText().clear();
                 mobNum.getText().clear();
@@ -52,27 +47,27 @@ public class RegisterRepActivity extends AppCompatActivity {
         });
     }
 
-    private void insertRepData() {
-        String RepFullName = fullName.getText().toString();
-        String RepNic = nic.getText().toString();
-        String RepNum = mobNum.getText().toString();
-        String RepEmail = email.getText().toString();
-        String RepPassword = password.getText().toString();
+    private void insertDisData() {
+        String DisFullName = fullName.getText().toString();
+        String DisNic = nic.getText().toString();
+        String DisNum = mobNum.getText().toString();
+        String DisEmail = email.getText().toString();
+        String DisPassword = password.getText().toString();
 
-        Representative representative = new Representative(RepFullName, RepNic, RepNum, RepEmail, RepPassword);
+        Distributor distributor = new Distributor(DisFullName, DisNic, DisNum, DisEmail, DisPassword);
 
-        if (!representative.RepFullName.isEmpty() && !representative.RepNic.isEmpty() && !representative.RepNum.isEmpty()
-                && !representative.RepEmail.isEmpty() && !representative.RepPassword.isEmpty()) {
-            reference.push().setValue(representative);
+        if (!distributor.DisFullName.isEmpty() && !distributor.DisNic.isEmpty() && !distributor.DisNum.isEmpty()
+                && !distributor.DisEmail.isEmpty() && !distributor.DisPassword.isEmpty()) {
+            reference.push().setValue(distributor);
             Toast.makeText(this, "Registered Successfully", Toast.LENGTH_SHORT).show();
-            openRepLogin();
+            openDisLogin();
         } else {
             Toast.makeText(this, "Fill all Fields", Toast.LENGTH_SHORT).show();
         }
     }
 
-    private void openRepLogin() {
-        Intent intent = new Intent(this, LoginActivity.class);
+    private void openDisLogin() {
+        Intent intent = new Intent(this, DistributorLoginActivity.class);
         startActivity(intent);
     }
 }

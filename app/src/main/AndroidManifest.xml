@@ -9,15 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DrugSpot">
-        <activity android:name=".RegisterRepActivity"></activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ShowMessages"></activity>
+        <activity android:name=".DistributorLoginActivity" />
+        <activity android:name=".SelectRoleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".RegisterDisActivity" />
+        <activity android:name=".RegisterRepActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
