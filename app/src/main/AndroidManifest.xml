@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DrugSpot">
-        <activity android:name=".ShowMessages"></activity>
+        <activity android:name=".MessagesActivity"></activity>
         <activity android:name=".DistributorLoginActivity" />
         <activity android:name=".SelectRoleActivity">
             <intent-filter>

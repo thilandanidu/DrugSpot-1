@@ -42,7 +42,7 @@ public class DistributorLoginActivity extends AppCompatActivity {
     }
 
     private void register() {
-        Intent intent = new Intent(this, RegisterDisActivity.class);
+        Intent intent = new Intent(this, MessagesActivity.class);
         startActivity(intent);
     }
 }

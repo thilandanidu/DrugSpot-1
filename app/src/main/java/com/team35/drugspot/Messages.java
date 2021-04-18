@@ -1,25 +1,33 @@
 package com.team35.drugspot;
 
 public class Messages {
-    String NoteID;
-    String Date;
-    String Note;
+    String date,not,notid;
 
-    public Messages(String noteID, String date, String note) {
-        NoteID = noteID;
-        Date = date;
-        Note = note;
-    }
+    public Messages(){
 
-    public String getNoteID() {
-        return NoteID;
     }
 
     public String getDate() {
-        return Date;
+        return date;
     }
 
-    public String getNote() {
-        return Note;
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getNot() {
+        return not;
+    }
+
+    public void setNot(String not) {
+        this.not = not;
+    }
+
+    public String getNotid() {
+        return notid;
+    }
+
+    public void setNotid(String notid) {
+        this.notid = notid;
     }
 }
