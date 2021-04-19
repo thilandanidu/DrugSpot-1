@@ -29,6 +29,7 @@ public class RegisterRepActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_rep);
+        getSupportActionBar().hide();
 
         fullName = findViewById(R.id.fullName);
         nic = findViewById(R.id.nic);

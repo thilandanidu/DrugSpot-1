@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DrugSpot</string>
+
+    <array name="Status">
+        <item>Processing</item>
+    </array>
 </resources>

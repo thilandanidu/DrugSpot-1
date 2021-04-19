@@ -6,13 +6,15 @@ public class Order {
     String phmName;
     String phmNum;
     String phmOrder;
+    String ordStatus;
 
-    public Order(String phmAddress, String phmEmail, String phmName, String phmNum, String phmOrder) {
+    public Order(String phmAddress, String phmEmail, String phmName, String phmNum, String phmOrder, String ordStatus) {
         this.phmAddress = phmAddress;
         this.phmEmail = phmEmail;
         this.phmName = phmName;
         this.phmNum = phmNum;
         this.phmOrder = phmOrder;
+        this.ordStatus = ordStatus;
     }
 
     public String getPhmAddress() {
@@ -33,5 +35,9 @@ public class Order {
 
     public String getPhmOrder() {
         return phmOrder;
+    }
+
+    public String getOrdStatus() {
+        return ordStatus;
     }
 }

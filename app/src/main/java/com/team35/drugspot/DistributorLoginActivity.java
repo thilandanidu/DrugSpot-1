@@ -17,6 +17,7 @@ public class DistributorLoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_distributor_login);
+        getSupportActionBar().hide();
 
         SignIn=findViewById(R.id.SignIn);
         register=findViewById(R.id.register);

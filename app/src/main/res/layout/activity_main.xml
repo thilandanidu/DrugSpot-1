@@ -4,89 +4,135 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    tools:ignore="DuplicateIds">
+    tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="ADD ORDER"
-        android:textSize="45sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157" />
-
-    <Button
-        android:id="@+id/btnInsertData"
+        android:id="@+id/bannerDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add Order"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phEmail"
-        tools:ignore="MissingConstraints" />
+        android:textSize="60sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf= "parent"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btnInsertData"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#0ED689"
+        android:text="Save"
+        android:textColor="#ffffff"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf= "parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/processing" />
+
+    <Button
+        android:id="@+id/pastOrders"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Past Orders"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/btnInsertData"
+        app:layout_constraintLeft_toLeftOf= "parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="@color/purple_500"/>
+
+    <Button
+        android:id="@+id/notification"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:backgroundTint="#F78D46"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/pastOrders"
+        app:layout_constraintLeft_toRightOf= "@id/pastOrders"
+        android:layout_marginLeft="10dp"/>
 
     <EditText
         android:id="@+id/phOrder"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
         android:hint="Enter Order"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phAddress"
-        tools:ignore="MissingConstraints" />
+        android:inputType="textEmailAddress"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf= "parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phAddress" />
 
     <EditText
         android:id="@+id/phAddress"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:hint="Enter Pharmacy Address"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phNum"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Pharmacy Address"
+        android:inputType="textEmailAddress"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf= "parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phNum" />
 
     <EditText
         android:id="@+id/phNum"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:hint="Enter Pharmacy number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phName"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Pharmacy Number"
+        android:inputType="textEmailAddress"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf= "parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phName" />
 
     <EditText
         android:id="@+id/phEmail"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:hint="Enter Email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phOrder"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf= "parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phOrder" />
 
     <EditText
         android:id="@+id/phName"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:hint="Enter Pharmacy name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="InvalidId,MissingConstraints" />
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Pharmacy Name"
+        android:inputType="textEmailAddress"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf= "parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bannerDesc" />
+    
+    <Spinner
+        android:id="@+id/processing"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf= "parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phEmail"
+        android:entries="@array/Status"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
