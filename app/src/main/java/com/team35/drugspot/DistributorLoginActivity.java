@@ -25,7 +25,7 @@ public class DistributorLoginActivity extends AppCompatActivity {
         SignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //openDisLogin();
+                openDisLogin();
             }
         });
 
@@ -38,12 +38,12 @@ public class DistributorLoginActivity extends AppCompatActivity {
     }
 
     private void openDisLogin() {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, OrderUpdateRep.class);
         startActivity(intent);
     }
 
     private void register() {
-        Intent intent = new Intent(this, MessagesActivity.class);
+        Intent intent = new Intent(this, RegisterDisActivity.class);
         startActivity(intent);
     }
 }

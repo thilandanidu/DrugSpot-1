@@ -8,6 +8,9 @@ public class Order {
     String phmOrder;
     String ordStatus;
 
+    public Order() {
+    }
+
     public Order(String phmAddress, String phmEmail, String phmName, String phmNum, String phmOrder, String ordStatus) {
         this.phmAddress = phmAddress;
         this.phmEmail = phmEmail;
