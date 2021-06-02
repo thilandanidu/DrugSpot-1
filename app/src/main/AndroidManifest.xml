@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DrugSpot">
-        <activity android:name=".RVActivity"></activity>
+        <activity android:name=".ItemList"></activity>
+        <activity android:name=".OrderState" />
+        <activity android:name=".DistributorUi" />
+        <activity android:name=".RVActivity" />
         <activity android:name=".OrderUpdateRep" />
         <activity android:name=".MessagesActivity" />
         <activity android:name=".DistributorLoginActivity" />

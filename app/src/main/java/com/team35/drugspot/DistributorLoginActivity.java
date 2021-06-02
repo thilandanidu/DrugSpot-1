@@ -31,13 +31,13 @@ public class DistributorLoginActivity extends AppCompatActivity {
 
         SignIn.setOnClickListener(view ->
         {
-            Intent intent = new Intent(this,RVActivity.class);
+            Intent intent = new Intent(this,DistributorUi.class);
             startActivity(intent);
         });
     }
 
     private void openDisLogin() {
-        Intent intent = new Intent(this, RVActivity.class);
+        Intent intent = new Intent(this, DistributorUi.class);
         startActivity(intent);
     }
 

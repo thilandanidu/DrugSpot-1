@@ -4,4 +4,9 @@
     <array name="Status">
         <item>Processing</item>
     </array>
+
+    <array name="Status1">
+        <item>Processing</item>
+        <item>Complete</item>
+    </array>
 </resources>
