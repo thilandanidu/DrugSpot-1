@@ -29,16 +29,15 @@ public class DistributorLoginActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.register).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                register();
-            }
+        SignIn.setOnClickListener(view ->
+        {
+            Intent intent = new Intent(this,RVActivity.class);
+            startActivity(intent);
         });
     }
 
     private void openDisLogin() {
-        Intent intent = new Intent(this, OrderUpdateRep.class);
+        Intent intent = new Intent(this, RVActivity.class);
         startActivity(intent);
     }
 
